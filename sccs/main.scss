@@ -1,0 +1,528 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'),
+        url('../fonts/roboto-v30-latin-regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/roboto-v30-latin-700.woff2') format('woff2'),
+        url('../fonts/roboto-v30-latin-700.woff') format('woff');
+}
+@import'main.scss';
+@import 'mixin.scss';
+* {
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+
+    .container {
+        margin: 0 auto;
+        padding: 0 20px;
+        width: 1200px;
+    }
+
+    .site__header {
+        position: fixed;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background: #FFFFFF;
+        box-shadow: 0px 14px 44px rgba(84, 84, 84, 0.25);
+        border-radius: 0px;
+    }
+
+    .header__section {
+        margin: 0;
+        padding: 19px 24px;
+        @include header;
+    }
+
+    .header__link {
+        text-decoration: none;
+    }
+
+    .header__nav {
+        margin: 0;
+        padding: 0px 0px;
+        width: 600px;
+        @include header;
+        background-image: url(../pictures/icon2.svg);
+        background-repeat: no-repeat;
+        background-position: calc(50% - 285px);
+    }
+
+    .nav__list {
+        margin: 0;
+        width: 600px;
+        @include header;
+        list-style: none;
+        transition: all 0.5s;
+
+    }
+
+    .nav__list .nav__item .nav__item--link {
+        margin: 0;
+        padding: 0;
+        border-radius: 0px;
+        border: 1px solid #FFFFFF;
+
+    }
+
+    // .nav__list .nav__item .nav__item--link:hover {
+    //     background-color: #FFCA3A;
+    //     border: 1px solid #FFCA3A;
+    //     border-radius: 5px;
+    // }
+
+    .nav__item .nav__item--link {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 1.96px;
+        text-transform: uppercase;
+        color: #011F3A;
+        transition: all 0.5s;
+    }
+
+    .nav__item .nav__item--link:hover {
+        border-bottom: 1px solid #011F3A;
+        border-radius: 0px;
+    }
+
+    .header__account {
+        margin: 0;
+        padding: 0;
+        @include header;
+    }
+
+    .account--link {
+        @include header;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 1.96px;
+        text-transform: uppercase;
+        color: #011F3A;
+    }
+
+    .account__link--img {
+        margin-left: 25px;
+    }
+
+    .site__main {
+        margin: 0;
+        padding: 0;
+        background: #F2AE4D;
+    }
+
+    .main__section {
+        margin: 0;
+        padding: 165px 0px 205px 85px;
+        width: 1200px;
+        @include header;
+    }
+
+    .main__section--left {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main__title {
+        margin: 0 50px 0 0;
+        padding: 0 90px 0 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        color: #011F3A;
+    }
+
+    .section__left--text {
+        margin: 33px 0 14px 0;
+        padding: 0 300px 0 0;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        color: #011F3A;
+    }
+
+    .section__left--link {
+        @include btn;
+        background: #3D5675;
+    }
+
+    .main__bottom--section {
+        margin: 0;
+        padding: 0;
+        @include header;
+        width: 1200px;
+    }
+
+    .main__bottom {
+        margin: 0;
+        padding: 20px 85px;
+        background-color: #FFFFFF;
+    }
+
+    .main__bottom--card {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main__bottom--text {
+        margin: 0 0 0 16px;
+        padding: 0;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+        letter-spacing: 0.6px;
+        color: #A1A1A1;
+    }
+
+    .site__product {
+        margin: 0;
+        padding: 40px 85px;
+        background-color: #eee;
+    }
+
+    .product__section {
+        margin: 0;
+        padding: 0;
+        width: 1200px;
+    }
+
+    .product__section--top {
+        margin: 0 0 40px 0;
+        padding: 17px 0 18px 0;
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .product_title {
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 38px;
+        color: #011F3A;
+    }
+
+    .product__link {
+        @include btn;
+        background-color: #011F3A;
+    }
+
+    .product__section--inner {
+        width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #FFFFFF;
+
+    }
+
+    .product__card {
+        margin: 0;
+        padding: 0;
+        width: 398px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border: 1px solid #EDEDED;
+
+    }
+
+    .p__card--body {
+        margin: 0;
+        padding: 25px 25px 0 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .product__card--inner {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        width: 350px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .card__heading {
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.36px;
+        color: #011F3A;
+    }
+
+    .card__desc {
+        margin: 8px 0 0 0;
+        padding: 0;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        color: #777777;
+    }
+
+    .left {
+        margin-left: 60px;
+        color: #A1A1A1;
+    }
+
+    ins {
+        text-decoration: none;
+        color: #A1A1A1;
+    }
+
+    .product__bottom {
+        margin: 0;
+        padding: 46px 0 56px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bottom__desc {
+        margin-right: 16px;
+
+    }
+
+    .product__bottom--link {
+        @include btn;
+        background-color: #FFFFFF;
+        color: #3D5675;
+    }
+
+
+
+    .site__design {
+        margin: 0;
+        padding: 70px 85px;
+        background-color: #EEE;
+    }
+
+    .design__section {
+        margin: 0;
+        padding: 88px 50px;
+        background: #72BDA3;
+        box-shadow: 0px 14px 44px rgba(143, 143, 143, 0.25);
+        border-radius: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .design__content {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .design__card {
+        margin: 0;
+        padding: 0;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .design__card--body {
+        margin: 0;
+        padding: 12px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .caption {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.36px;
+        color: #011F3A;
+    }
+
+    .desc {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        text-align: center;
+        color: #3D5675;
+    }
+
+    .design__link {
+        @include btn;
+        background-color: #3d5675;
+    }
+
+    .site__service {
+        margin: 0;
+        padding: 0 85px;
+        background-color: #eee;
+    }
+
+    .service__section--inner {
+        margin: 0;
+        padding: 88px 0;
+    }
+
+    .service__title {
+        margin: 0 0 82px 0;
+        padding: 0;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 41px;
+        color: #011F3A;
+    }
+
+    .service__content {
+        margin: 0;
+        padding: 0;
+        width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .service__caption {
+        margin: 54px 0 12px 0;
+        padding: 0;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 0.36px;
+        color: #011F3A;
+    }
+
+    .service__card {
+        margin: 0;
+        padding: 0;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service__card--body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .service--desc {
+        margin: 0;
+        padding: 0 40px 0 0;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        /* or 160% */
+
+
+        color: #A1A1A1;
+
+    }
+
+    .site__article {
+        margin: 0;
+        padding: 60px 85px;
+    }
+
+    .article__section {
+        margin: 0;
+        padding: 110px 120px;
+        @include center;
+        width: 1200px;
+        background-color: #FFCA3A;
+
+
+
+    }
+
+    .article__card {
+        margin: 0;
+        padding: 0 0 0 0;
+        @include flex;
+        width: 600px;
+        height: 410px;
+    }
+
+    .article__card:first-child {
+        border-right: 1px solid #555;
+
+    }
+
+    .card__body {
+        @include flex;
+        margin: 0;
+        padding: 0 55px;
+    }
+
+    .card__title {
+        margin: 0;
+        padding: 0;
+        @include fonts;
+    }
+
+    .card__text {
+        margin: 20px 0;
+        padding: 0;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        text-align: center;
+        color: #3D5675;
+    }
+
+    .card--link {
+        margin: 10px 0;
+        padding: 13px 25px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 1.96px;
+        text-transform: uppercase;
+        color: #3D5675;
+        text-decoration: none;
+        background: #FFFFFF;
+        border-radius: 44px;
+    }
+}
