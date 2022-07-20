@@ -498,4 +498,65 @@ body .card--link {
 body .merchants__section {
   margin: 0;
   padding: 88px 85px;
+}
+body .merchants__content {
+  margin: 0;
+  padding: 0;
+}
+body .top__titles {
+  margin: 0;
+  padding: 0 415px 59px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #011F3A;
+}
+body .merchants__content__inner {
+  margin: 0;
+  padding: 100px 0 0 0;
+  width: 1200px;
+  background: #FFFFFF;
+  box-shadow: 0px 14px 44px rgba(143, 143, 143, 0.25);
+  border-radius: 0px;
+}
+body .content__inner--top {
+  margin: 0;
+  padding: 0 190px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .content__inner--section {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+body .merchant__card {
+  margin: 0;
+  padding: 0;
+}
+body .merchant__card:nth-child(2) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+body .card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 588px;
+}
+body .m__card--body {
+  margin: 0;
+  padding: 63px 106px 0 106px;
+}
+body blockquote {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: #011F3A;
 }/*# sourceMappingURL=main.css.map */
