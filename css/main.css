@@ -10,12 +10,12 @@
   font-weight: 700;
   src: local(""), url("../fonts/roboto-v30-latin-700.woff2") format("woff2"), url("../fonts/roboto-v30-latin-700.woff") format("woff");
 }
-html {
-  scroll-behavior: smooth;
-}
-
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -494,4 +494,8 @@ body .card--link {
   text-decoration: none;
   background: #FFFFFF;
   border-radius: 44px;
+}
+body .merchants__section {
+  margin: 0;
+  padding: 88px 85px;
 }/*# sourceMappingURL=main.css.map */
