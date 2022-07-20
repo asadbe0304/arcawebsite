@@ -26,7 +26,7 @@ body {
 body .container {
   margin: 0 auto;
   padding: 0 20px;
-  width: 1200px;
+  width: 1240px;
 }
 body .site__header {
   position: fixed;
@@ -118,7 +118,7 @@ body .site__main {
 }
 body .main__section {
   margin: 0;
-  padding: 165px 0px 205px 85px;
+  padding: 165px 55px 205px 55px;
   width: 1200px;
   display: flex;
   justify-content: space-between;
@@ -133,7 +133,7 @@ body .main__section--left {
 }
 body .main__title {
   margin: 0 50px 0 0;
-  padding: 0 90px 0 0;
+  padding: 0 50px 0 0;
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
@@ -171,7 +171,7 @@ body .main__bottom--section {
 }
 body .main__bottom {
   margin: 0;
-  padding: 20px 85px;
+  padding: 20px 55px;
   background-color: #FFFFFF;
 }
 body .main__bottom--card {
@@ -192,7 +192,7 @@ body .main__bottom--text {
 }
 body .site__product {
   margin: 0;
-  padding: 40px 85px;
+  padding: 40px 55px;
   background-color: #eee;
 }
 body .product__section {
@@ -310,7 +310,7 @@ body .product__bottom--link {
 }
 body .site__design {
   margin: 0;
-  padding: 70px 85px;
+  padding: 70px 55px;
   background-color: #EEE;
 }
 body .design__section {
@@ -375,7 +375,7 @@ body .design__link {
 }
 body .site__service {
   margin: 0;
-  padding: 0 85px;
+  padding: 0 55px;
   background-color: #eee;
 }
 body .service__section--inner {
@@ -433,11 +433,11 @@ body .service--desc {
 }
 body .site__article {
   margin: 0;
-  padding: 60px 85px;
+  padding: 60px 55px;
 }
 body .article__section {
   margin: 0;
-  padding: 110px 120px;
+  padding: 110px 55px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -497,7 +497,7 @@ body .card--link {
 }
 body .merchants__section {
   margin: 0;
-  padding: 88px 85px;
+  padding: 88px 55px;
 }
 body .merchants__content {
   margin: 0;
